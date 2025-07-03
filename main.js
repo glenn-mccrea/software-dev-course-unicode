@@ -127,18 +127,32 @@ Assign the result to a variable named swappedString.*/
 
 //Starter Code
 // Task 1
+console.log("Problem 2 task 1");
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); // Your code here
+let thirdCodePoint = inputString1.charCodeAt(2); // Your code here
+console.log(firstCodePoint + thirdCodePoint);
 
 // Task 2
-let wordFromCodePoints; // Your code here
+console.log("Problem 2 task 2");
+let wordFromCodePoints =
+  String.fromCharCode(72) +
+  String.fromCharCode(101) +
+  String.fromCharCode(108) +
+  String.fromCharCode(108); // Your code here
+console.log(wordFromCodePoints);
 
 // Task 3
+console.log("Problem 2 task 3");
 let inputString2 = "Launch";
-let swappedString; // Your code here
 
+let swap1 = inputString2.charCodeAt(0);
+let swap2 = inputString2.charCodeAt(5); // Your code here
+let swappedString =
+  String.fromCharCode(swap2) + "aunc" + String.fromCharCode(swap1);
+console.log(swappedString);
 // Log all results
+console.log("Problem #2 Result:");
 console.log({
   firstCodePoint,
   thirdCodePoint,
